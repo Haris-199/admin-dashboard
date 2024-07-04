@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "nav header" "nav content";
+}
+
+#nav-bar {
+    grid-area: nav;
+}
+
+#header {
+    grid-area: header;
+}
+
+#content {
+    grid-area: content;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "projects announcements" "projects trending";
+}
+
+#projects {
+    grid-area: projects;
+}
+
+#announcements {
+    grid-area: announcements;
+}
+
+#trending {
+    grid-area: trending;
+}
+
+div {
+    border: 1px solid red;
+}
