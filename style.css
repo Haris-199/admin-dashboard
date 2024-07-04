@@ -16,6 +16,7 @@ body {
 
 #nav-bar {
     grid-area: nav;
+    background-color: rgb(25, 146, 212);
 }
 
 #header {
@@ -24,14 +25,75 @@ body {
 
 #content {
     grid-area: content;
-
+    background-color: rgb(226, 232, 240);
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas: "projects announcements" "projects trending";
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+#projects-panel {
+    grid-area: projects;
+}
+
+#projects-panel > h4{
+    margin-bottom: 0.5rem;
 }
 
 #projects {
-    grid-area: projects;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.project {
+    flex: 1;
+    min-width: 375px;
+    min-height: 225px;
+
+    padding: 2rem 2rem 2rem 1.5rem;
+    border-radius: 0.5rem;
+    border-left: 0.5rem solid rgb(240, 180, 41);
+    box-shadow: 1px 1px 5px 2px #ccc;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project > h4 {
+    margin-bottom: 0.25rem;
+}
+
+.project > p {
+    color: rgb(99, 99, 99);
+}
+
+.project > div.project-icons {
+    margin-top: auto;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+}
+
+div.project-icons > span {
+    min-width: 20px;
+    min-height: 20px;
+}
+
+span.star-plus {
+    background-image: url("./assets/star-plus-outline.svg");
+}
+
+span.eye-plus {
+    background-image: url("./assets/eye-plus-outline.svg");
+}
+
+span.source-fork {
+    background-image: url("./assets/source-fork.svg");
 }
 
 #announcements {
@@ -40,8 +102,4 @@ body {
 
 #trending {
     grid-area: trending;
-}
-
-div {
-    border: 1px solid red;
 }
