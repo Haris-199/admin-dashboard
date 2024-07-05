@@ -18,7 +18,7 @@ body {
 #nav-bar {
     grid-area: nav;
     background-color: rgb(25, 146, 212);
-    padding: 1rem 0 0 1rem;
+    padding: 1rem 1rem;
     color: white;
     font-size: large;
     font-weight: bold;
