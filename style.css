@@ -53,6 +53,18 @@ body {
 
 #header {
     grid-area: header;
+    padding: 1rem 2rem;
+}
+
+#header > div.top, #header > div.bottom {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+    align-items: center;
+    grid-template-columns: min-content 1fr;
+}
+
+#header > div.bottom {
 }
 
 #header img {
