@@ -64,9 +64,6 @@ body {
     grid-template-columns: min-content 1fr;
 }
 
-#header > div.bottom {
-}
-
 #header img {
     width: 20px;
     height: 20px;
