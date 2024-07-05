@@ -6,8 +6,10 @@
 
 body {
     margin: 0;
-
     height: 100vh;
+
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
@@ -42,16 +44,13 @@ body {
 }
 
 #projects {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
     gap: 1.5rem;
 }
 
 .project {
-    flex: 1;
-    min-width: 375px;
-    min-height: 225px;
-
     padding: 2rem 2rem 2rem 1.5rem;
     border-radius: 0.5rem;
     border-left: 0.5rem solid rgb(240, 180, 41);
@@ -68,6 +67,7 @@ body {
 
 .project > p {
     color: rgb(99, 99, 99);
+    margin-bottom: 1.5rem;
 }
 
 .project > div.project-icons {
