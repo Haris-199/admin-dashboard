@@ -55,6 +55,11 @@ body {
     grid-area: header;
 }
 
+#header img {
+    width: 20px;
+    height: 20px;
+}
+
 #content {
     grid-area: content;
     background-color: rgb(226, 232, 240);
