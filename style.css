@@ -138,6 +138,8 @@ h3 > span.greeting {
 
 #projects-panel {
     grid-area: projects;
+    display: grid;
+    grid-auto-rows: min-content 1fr;
 }
 
 #projects-panel > h4 {
@@ -227,7 +229,6 @@ span.source-fork {
 .announcements-list > strong {
     display: inline-block;
     margin-bottom: 0.25rem;
-
 }
 
 .announcements-list > p {
