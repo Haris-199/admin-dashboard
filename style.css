@@ -59,7 +59,8 @@ body {
     box-shadow: 0px 1px 5px 2px #ccc;
 }
 
-#header > div.top, #header > div.bottom {
+#header > div.top,
+#header > div.bottom {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: min-content;
@@ -198,6 +199,39 @@ span.source-fork {
 
 #announcements {
     grid-area: announcements;
+}
+
+#announcements > h4 {
+    margin-bottom: 0.5rem;
+}
+
+.announcements-list {
+    background-color: white;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px 2px #ccc;
+}
+
+.announcements-list > div.line {
+    margin-block: 1.25rem;
+    height: 1px;
+    background-color: rgb(210, 210, 210);
+}
+
+.announcements-list > p,
+.announcements-list > strong {
+    padding-inline: 0.5rem;
+}
+
+.announcements-list > strong {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+
+}
+
+.announcements-list > p {
+    color: rgb(99, 99, 99);
 }
 
 #trending {
