@@ -64,11 +64,42 @@ body {
     grid-template-columns: min-content 1fr;
 }
 
+#header > div.top {
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+#header > div.top > *:nth-last-child(2) {
+    margin-left: 1rem;
+}
+
+#header > div.top > strong {
+    padding: 0 1rem;
+    width:  max-content;
+}
+
+#header > div.top > input[type="search"] {
+    appearance: none;
+    width: 90%;
+    height: 1.75rem;
+    padding: 0 0.75rem;
+
+    font-size: large;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(226, 232, 240);
+}
+
+#header > div.top > img.profile-pic {
+    border-radius: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+}
+
 #header > div.bottom > img.profile-pic {
     border-radius: 2rem;
     width: 4rem;
     height: 4rem;
-    object-fit:contain;
     margin-right: 1rem;
 }
 
