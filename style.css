@@ -64,6 +64,28 @@ body {
     grid-template-columns: min-content 1fr;
 }
 
+#header > div.bottom > img.profile-pic {
+    border-radius: 2rem;
+    width: 4rem;
+    height: 4rem;
+    object-fit:contain;
+    margin-right: 1rem;
+}
+
+h3 > span.greeting {
+    font-size: small;
+}
+
+#header > div.bottom > button {
+    background-color: rgb(25, 146, 212);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-left: 2rem;
+}
+
 #header img {
     width: 20px;
     height: 20px;
