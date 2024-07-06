@@ -203,3 +203,9 @@ span.source-fork {
 #trending {
     grid-area: trending;
 }
+
+.trending-list > img {
+    border-radius: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+}
