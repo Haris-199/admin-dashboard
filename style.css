@@ -6,9 +6,7 @@
 
 body {
     height: 100vh;
-
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
@@ -105,7 +103,6 @@ body {
 
 #header > div.top img.icon {
     width: 20px;
-    height: 20px;
 }
 
 #header > div.bottom > a {
@@ -214,7 +211,6 @@ span.source-fork {
 }
 
 .announcements-list {
-    background-color: white;
     background-color: #fff;
     padding: 2rem;
     border-radius: 0.5rem;
