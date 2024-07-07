@@ -94,17 +94,28 @@ body {
     background-color: rgb(226, 232, 240);
 }
 
-#header > div.top > img.profile-pic {
-    border-radius: 1.5rem;
+#header > div.top > a {
     width: 3rem;
-    height: 3rem;
 }
 
-#header > div.bottom > img.profile-pic {
-    border-radius: 2rem;
+#header > div.top img.profile-pic {
+    border-radius: 1.5rem;
+    width: 100%;
+}
+
+#header > div.top img.icon {
+    width: 20px;
+    height: 20px;
+}
+
+#header > div.bottom > a {
     width: 4rem;
-    height: 4rem;
     margin-right: 1rem;
+}
+
+#header > div.bottom img.profile-pic {
+    border-radius: 2rem;
+    width: 100%;
 }
 
 h3 > span.greeting {
@@ -119,11 +130,6 @@ h3 > span.greeting {
     border-radius: 1rem;
     padding: 0.5rem 1.5rem;
     margin-left: 2rem;
-}
-
-#header img {
-    width: 20px;
-    height: 20px;
 }
 
 #content {
@@ -265,9 +271,12 @@ span.source-fork {
     color: rgb(99, 99, 99);
 }
 
-.trending-list > img {
-    margin: 0.5rem 0;
+.trending-list > a {
     grid-row: span 2;
+}
+
+.trending-list img {
+    margin: 0.5rem 0;
     border-radius: 1.5rem;
     width: 3rem;
     height: 3rem;
